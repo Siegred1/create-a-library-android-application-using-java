@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    android:orientation="vertical"
+    tools:context=".peminjaman">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peminjaman Buku"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="@android:color/holo_blue_dark"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+<!--        <ImageView-->
+<!--            android:id="@+id/profilebtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/oval_draw"-->
+<!--            android:src="@drawable/baseline_person_24" />-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginLeft="10dp">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Nama   :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    />-->
+<!--                <EditText-->
+<!--                    android:id="@+id/nama"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="                                       "-->
+<!--                    android:enabled="false"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/alamat"-->
+<!--                    android:text="Alamat :"-->
+<!--                    android:textSize="20dp"-->
+<!--                    />-->
+<!--                <EditText-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="                                     "-->
+<!--                    android:enabled="false"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+        android:text="List Buku yang dipinjam"
+        android:textSize="30dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listbukupinjam"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_margin="5dp"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:drawSelectorOnTop="true" />
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="15dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:gravity="bottom|end"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--    </LinearLayout>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/addbtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/oval_add"-->
+<!--        android:src="@drawable/baseline_add_24"/>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/memberbtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="bottom|start"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:background="@drawable/oval_add"-->
+<!--        android:src="@drawable/baseline_person_outline_24"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="bottom">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/memberbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+
+<!--                android:background="@drawable/oval_add"-->
+<!--                android:src="@drawable/baseline_person_outline_24" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/addbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:background="@drawable/oval_add"-->
+<!--                android:src="@drawable/baseline_add_24" />-->
+<!--        </ LinearLayout >-->
+<!--    </ LinearLayout >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                &lt;!&ndash; ImageButton 1 di pojok kiri &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/memberbtn"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:background="@drawable/oval_add"-->
+<!--                    android:src="@drawable/baseline_person_outline_24" />-->
+
+<!--                &lt;!&ndash; Spasi atau elemen filler (opsional) &ndash;&gt;-->
+<!--                <Space-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"/>-->
+
+<!--                &lt;!&ndash; ImageButton 2 di pojok kanan &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/addbookbtn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:background="@drawable/oval_add"-->
+<!--                    android:src="@drawable/baseline_add_24"-->
+<!--                    android:layout_gravity="end"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- ImageButton 1 di pojok kiri -->
+            <ImageButton
+                android:id="@+id/memberbtn"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/oval_add"
+                android:src="@drawable/baseline_person_outline_24" />
+
+            <!-- Spasi atau elemen filler (opsional) -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- ImageButton 2 di tengah -->
+            <ImageButton
+                android:id="@+id/bookbtn"
+                android:layout_width="58dp"
+                android:layout_height="60dp"
+                android:background="@drawable/oval_add"
+                android:src="@drawable/baseline_library_books_24" />
+
+            <!-- Spasi atau elemen filler (opsional) -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <!-- ImageButton 3 di pojok kanan -->
+            <ImageButton
+                android:id="@+id/addborrowbtn"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/oval_add"
+                android:src="@drawable/baseline_add_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="3dp"-->
+<!--        android:text="Pinjam Buku"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="25dp" />-->
+
+
+</LinearLayout>
